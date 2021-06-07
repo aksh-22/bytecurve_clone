@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: $light-color;
+	color: $dark-color;
+	font-size: 1rem;
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	width: 100vw;
+	@media (min-width: 600px) {
+		font-size: 1.05rem;
+	}
+	@media (min-width: 800px) {
+		font-size: 1.1rem;
+	}
+	line-height: 1.6;
+}
+
+.hor {
+	margin: 5em 0;
+	color: rgb(236, 233, 233);
+}

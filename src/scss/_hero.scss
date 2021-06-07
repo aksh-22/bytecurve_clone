@@ -1,0 +1,30 @@
+.hero {
+	display: block;
+	width: 100vw;
+	height: 70vh;
+	background: url(../img/bus.jpg) rgba(0, 0, 0, 0.836);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	position: relative;
+	& .hero-text {
+		display: block;
+		position: absolute;
+		width: 80%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: $light-color;
+
+		& button {
+			padding: 0.5em 1em;
+			background: $btn-pink-color;
+			border: none;
+			margin: 1em auto;
+			color: $light-color;
+			font-weight: 600;
+		}
+	}
+}

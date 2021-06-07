@@ -1,0 +1,68 @@
+footer {
+	// display: flex;
+	// flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	padding: 1em;
+	// margin: auto;
+	margin-bottom: 2em;
+	// justify-content: center;
+	// text-align: center;
+	// background: red;
+
+	& > * {
+		// flex-basis: 100%;
+		margin: 0 2em;
+	}
+
+	@include tab {
+		flex-direction: row;
+	}
+
+	& > * {
+		margin: 0;
+	}
+
+	.footer-about {
+		& > * {
+			margin: 0.5em auto;
+		}
+		button {
+			border: none;
+			padding: 1em;
+			background: $btn-blue-color;
+			color: $light-color;
+		}
+
+		.copyright {
+			margin-top: 2em;
+		}
+	}
+
+	.footer-contact {
+		& > * {
+			margin-bottom: 1em;
+		}
+	}
+
+	.footer-links {
+		display: block;
+
+		.link {
+			display: flex;
+			flex-direction: column;
+			margin: 0.2em 0 2em 0;
+
+			a {
+				text-decoration: none;
+				color: $dark-color;
+			}
+		}
+
+		.icons {
+			& > * {
+				margin: 0.5em;
+			}
+		}
+	}
+}
